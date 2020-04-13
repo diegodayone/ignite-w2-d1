@@ -16,4 +16,91 @@ h1 {
     background-color: green;
 }
 
+div>ul {
+    background-color: red;
+}
+
+/* div~p {
+    background: green;
+} */
+
+[title~=test] {
+    background: yellow;
+}
+
+[title=test] {
+    background: red;
+}
+
+[type=number] {
+    border: 1px solid green;
+    background: gray;
+}
+
+[type=text] {
+    border:5px solid red;
+    background: greenyellow;
+}
+a {
+    color: red;
+}
+
+[href^=https] {
+    color: green;
+}
+
+[href$=pdf] {
+    font-size:2em;
+}
+
+[alt~=google] {
+    font-weight: bolder;
+}
+
+[src$=png] {
+    background: fuchsia;
+}
+
+ul:first-child {
+    border-top:1px solid gray;
+    border-radius: 15px;
+}
+
+li:nth-child(3n) {
+    background-color: #9f8ee78c;
+}
+li:nth-child(3n+1) {
+    background-color: whitesmoke;
+}
+
+
+ul:last-child {
+    border-radius: 15px;
+    border-bottom:1px solid gray;
+}
+
+li::after{
+    content:"<";
+    border-right: 1px solid red;
+    display:none;
+}
+
+li:hover::after {
+    display:inline;
+}
+
+.innerDiv:hover {
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000; 
+}
+
+input[type=text]:focus{
+    -webkit-box-shadow: 5px 5px 15px 5px #000000; 
+    box-shadow: 5px 5px 15px 5px #000000; 
+}
+
+/* p+p{
+    background-color: yellow;
+} */
+
 /* !important >> inline style >> id >> class >> tag */

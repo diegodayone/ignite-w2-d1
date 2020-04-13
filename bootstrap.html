@@ -10,9 +10,21 @@
 
     <title>Hello, world!</title>
     <style>
+
+        h1 {
+               text-align: center;
+        }
+
         @media (min-width: 578px) {
             h1 {
                 color:red;
+                text-align: left;
+            }
+        }
+
+        @media (max-width: 500px) {
+            img{
+                display:none;
             }
         }
 
@@ -49,11 +61,55 @@
             padding:5px;
             margin:0px;
         }
+
+        .main-cover {
+            position:relative;
+        }
+
+        .main-cover>p {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            display: none;
+            top: 50%;
+            background: white;
+        }
+
+        .main-cover:hover>p {
+            display:block;
+        }
     </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+   
     <div class="container">
+        <h1>Hello, world!</h1>
+
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="row">
+                    <div class="col">1</div>
+                    <div class="col">2</div>
+                    <div class="col">3</div>
+                    <div class="col">4</div>
+                    <div class="col">5</div>
+                    <div class="col">6</div>
+                    <div class="col">7</div>
+                    <div class="col">8</div>
+                    <div class="col">9</div>
+                    <div class="col">10</div>
+                    <div class="col">11</div>
+                    <div class="col">12</div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="main-cover">
+                    <img src="cover.jpg" />
+                    <p>Britney</p>
+                </div>
+            </div>
+        </div>
+
        <div class="row"> 
            <div class="col-6" id="col1">
                Left column
